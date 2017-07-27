@@ -1,7 +1,7 @@
 (function (angular) {
     'use strict';
     angular
-            .module('crankApp')
+            .module('demoApp')
             .config(['$mdIconProvider', function ($mdIconProvider) {
                     $mdIconProvider.icon('md-close', 'img/icons/ic_close_24px.svg', 24);
                 }])

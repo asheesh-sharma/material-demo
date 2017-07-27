@@ -1,7 +1,7 @@
 (function (angular) {
     'use strict';
     angular
-            .module('crankApp')
+            .module('demoApp')
             .controller('homeCtrl', function ($scope, $mdSidenav) {
 //                $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
                 $scope.slide = false;

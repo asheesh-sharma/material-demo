@@ -1,7 +1,7 @@
 (function (angular) {
     'use strict';
     angular
-            .module('crankApp')
+            .module('demoApp')
             .controller('sideNavCtrl', function ($scope, $mdSidenav) {
                 $scope.toggleLeft = buildToggler('left');
                 $scope.toggleRight = buildToggler('right');

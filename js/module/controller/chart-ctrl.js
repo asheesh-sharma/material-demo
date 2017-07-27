@@ -3,7 +3,7 @@
 
 
     angular
-            .module('crankApp')
+            .module('demoApp')
             .controller('chartCtrl', function ($scope, $window, $mdToast, $mdDialog) {
 
                 $scope.isDlgOpen;

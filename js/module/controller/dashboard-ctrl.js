@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-            .module('crankApp')
+            .module('demoApp')
             .controller('DashboardCtrl', ['$scope', function ($scope) {
 
                     $scope.tileContentExpanded = false;

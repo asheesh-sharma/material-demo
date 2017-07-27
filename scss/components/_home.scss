@@ -87,7 +87,7 @@ md-menu-content[width="5"]{
 .main-contents-wrapper{
     display: -webkit-flex; /* Safari */
     display: flex;
-    width: 100%;
+    width: 100%;   
     min-height: 100vh;
     height: auto;
     /*flex-direction: column;*/    
@@ -165,7 +165,7 @@ md-menu-content[width="5"]{
     flex-direction:         column;
   
     width: 100%;
-    padding: 0;
+    padding: 0 !important;
     background-color: $color_white;
     .btn-wrapper{
         .md-raised{
@@ -207,7 +207,7 @@ md-menu-content[width="5"]{
                 background-color: $color_light_blue2;
             }            
         }
-    }
+    }  
 }
 .angular-google-map-container { height: 450px; }
 /*--  Footer Wrapper Styles  --*/
@@ -217,6 +217,11 @@ md-menu-content[width="5"]{
     padding: 25px;
     height: 160px;
     background-color: $color_dark_grey7;
+}
+.page-footer{
+    .btn-wrapper{
+        margin: 15px;
+    }
 }
 
 @media (min-width: 120px) and (max-width: 600px){
