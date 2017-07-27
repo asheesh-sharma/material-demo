@@ -31,7 +31,7 @@ var $ = require('gulp-load-plugins')({
 
 /*-- Stream Task  --*/
 gulp.task('stream', function () {
-    gulp.src(['scss/main.scss'])
+    gulp.src(['scss/theme.scss'])
             .pipe(sass({errLogToConsole: true}))
             .pipe(concat('main.css'))
             .pipe(minifyCSS())

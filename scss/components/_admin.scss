@@ -35,17 +35,23 @@ md-menu-content[width="5"]{
     color: $color_light_black4;
     text-transform: uppercase;
     font-family   : $titillium_web_regular_font_family;
-    background-color: $color_dark_grey8;
+    background-color: #2b91a0;
     border-bottom: 3px solid $color_white;
     position: absolute;
     top: 0;
     z-index:99;
     width:100%;
+
+    md-icon{
+    color: $color_white;
+    }
     span,a{
         display: inline-flex;
-        color: $color_light_black4;
+        color: #fff;
+         text-decoration: none; 
         &:hover,&:focus{
-            color: $color_light_black4;
+            color: #fff; 
+            text-decoration: none; 
         }
     }
     .first-col{
@@ -58,7 +64,7 @@ md-menu-content[width="5"]{
             font-size: ($font_size_base);   
             line-height: 14px;
             font-family: $titillium_web_regular_font_family;
-            border-right: 2px solid $color_light_black4;
+            border-right: 2px solid $color_white;
         }
     }
     .second-col,.third-col{

@@ -29,13 +29,13 @@ md-menu-content[width="5"]{
     color: $color_light_black4;
     text-transform: uppercase;
     font-family   : $titillium_web_regular_font_family;
-    background-color: $color_dark_grey8;
+    background-color: $color_light_grey7;
     border-bottom: 3px solid $color_white;
     span,a{
         display: inline-flex;
-        color: $color_light_black4;
+        color: #fff;  
         &:hover,&:focus{
-            color: $color_light_black4;
+            color: #fff;  
         }
     }
     .first-col{

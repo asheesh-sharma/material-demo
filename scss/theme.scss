@@ -1,14 +1,10 @@
-@import 'normalize';
-@import 'fonts';
-@import 'vars';
+
+@import '_variable.scss';
 @import "_mixin.scss";
-@import 'components/promotion';
+@import '_normalize.scss';
+@import '_fonts.scss';
 @import "components/_animation.scss";
-@import 'components/search';
-@import 'components/track-list';
-@import 'components/track';
-@import 'components/perfect-scrollbar';
-@import "components/_styles.scss";
+@import 'components/_perfect_scrollbar.scss';
 @import "components/_home.scss";
 @import "components/_admin.scss";
 @import "components/_tabs.scss";  
