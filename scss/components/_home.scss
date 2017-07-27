@@ -1,0 +1,239 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Apr, 2017, 8:58:07 PM
+    Author     : Asheesh Sharma
+*/
+
+/*==============================================================================
+*******************        Home Page Styles For The Site    ********************
+==============================================================================*/
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+md-menu-content[width="5"]{
+    min-width: 120px;
+}
+.header-wrapper{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    padding: 8px 25px;
+    color: $color_light_black4;
+    text-transform: uppercase;
+    font-family   : $titillium_web_regular_font_family;
+    background-color: $color_dark_grey8;
+    border-bottom: 3px solid $color_white;
+    span,a{
+        display: inline-flex;
+        color: $color_light_black4;
+        &:hover,&:focus{
+            color: $color_light_black4;
+        }
+    }
+    .first-col{
+        a{
+            font-size: ($font_size_base + 2);
+        }
+        span{
+            @include margin(0 5px);
+            @include padding(0 5px 0 0);
+            font-size: ($font_size_base); 
+            line-height: 14px;
+            font-family: $titillium_web_regular_font_family;
+            border-right: 2px solid $color_light_black4;
+        }
+    }
+    .second-col,.third-col{
+        span{
+            @include margin(0 5px);
+            font-size: ($font_size_base); 
+            line-height: 14px;
+            font-family: $titillium_web_regular_font_family;
+        }
+    }
+    .second-col{
+        span{
+            font-size: ($font_size_base * 1.5);  
+        }
+    }
+    .third-col{
+        @include padding(0 0 10px);
+    }
+    .logo{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: $color_white;
+        text-decoration: none;
+        background-color: $color_light_black5;
+        @include border-radius(50%);
+        &:hover,&:focus{
+            color: $color_white;
+        }
+    }
+}
+
+/*--  Main Contents Wrapper Styles  --*/
+.main-contents-wrapper{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    /*flex-direction: column;*/    
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */            
+    background: rgba(255, 255, 255, .1);
+    position: relative;
+    flex: 1; /* same as flex: 1 1 auto; */
+}
+
+/*--  Aside Wrapper Styles  --*/
+.aside-wrapper{
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+
+    width: 230px;
+    padding: 25px;
+    position: relative;
+    background-color: $color_light_blue1;
+    md-icon.md-default-theme.md-accent, md-icon.md-accent {
+        color: rgb(255, 64, 129);
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        color: $color_white;
+        cursor: pointer;
+        outline: none;
+    }
+    .logo{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: $color_white;
+        text-decoration: none;
+        background-color: $color_light_black5;
+        @include border-radius(50%);
+        &:hover,&:focus{
+            color: $color_white;
+        }
+    }
+    .aside-list{
+        @include padding(0); 
+        md-list-item.md-3-line{
+            @include margin(0);
+            @include padding(10px 15px); 
+            font-size: ($font_size_base); 
+            min-height: auto;
+            color: $color_white;
+            font-family: $titillium_web_regular_font_family;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid $color_white;
+            &:before{
+                min-height: auto;
+            }
+            img{
+                @include margin(0 auto 5px);
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+.right-contents-wrapper{
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+  
+    width: 100%;
+    padding: 0;
+    background-color: $color_white;
+    .btn-wrapper{
+        .md-raised{
+            width: 112px;
+            height: 48px;   
+            margin: 0;
+            font-size     : 14px;
+            text-align    : center;
+            min-height    : auto;
+            color         : $color_white;
+            line-height   : 18px;
+            font-family   : $titillium_web_regular_font_family;
+            text-transform: uppercase;
+            &.md-light-green{
+                background-color: $color_light_green;
+            }
+            &.md-light-yellow{
+                background-color: $color_light_yellow;
+            }
+            &.md-dark-green{
+                background-color: $color_dark_green;
+            }
+            &.md-light-slate{
+                background-color: $color_light_slate;
+            }
+            &.md-skype-blue{
+                background-color: $color_light_skype_blue;
+            }
+            &.md-orange{
+                background-color: $color_light_orange;
+            }
+            &.md-light-orange{
+                background-color: $color_light_orange1;
+            }
+            &.md-dark-black{
+                background-color: $color_light_black6;
+            }
+            &.md-light-blue{
+                background-color: $color_light_blue2;
+            }            
+        }
+    }
+}
+.angular-google-map-container { height: 450px; }
+/*--  Footer Wrapper Styles  --*/
+.footer-wrapper{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    padding: 25px;
+    height: 160px;
+    background-color: $color_dark_grey7;
+}
+
+@media (min-width: 120px) and (max-width: 600px){
+    .header-wrapper{
+        @include padding(15px);
+        .first-col{
+            justify-content: center;
+        }
+        .second-col{
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            margin: 15px 0;
+            padding: 15px 0;
+        }
+        .third-col{
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}

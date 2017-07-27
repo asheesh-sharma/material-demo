@@ -1,0 +1,34 @@
+/*--  Titillium Web Light  --*/
+@font-face {
+    font-family:'titillium-web-light';
+    src: url('../fonts/titilliumweb-light.eot');
+    src: url('../fonts/titilliumweb-light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/titilliumweb-light.otf') format('otf'),
+        url('../fonts/titilliumweb-light.woff') format('woff'),
+        url('../fonts/titilliumweb-light.ttf') format('truetype'),
+        url('../fonts/titilliumweb-light.svg#titilliumweb-light') format('svg'); 
+}
+/*--  Titillium Web Regular  --*/
+@font-face {
+    font-family:'titillium-web-regular';
+    src: url('../fonts/titillium-web-regular.eot');
+    src: url('../fonts/titillium-web-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/titillium-web-regular.otf') format('otf'),
+        url('../fonts/titillium-web-regular.woff') format('woff'),
+        url('../fonts/titillium-web-regular.ttf') format('truetype'),
+        url('../fonts/titillium-web-regular.svg#titillium-web-regular') format('svg'); 
+}@font-face {
+    font-family: 'Titillium web';
+    src: url('../fonts/titilliumweb-regular.woff2') format('woff2'),
+         url('../fonts/titilliumweb-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Titillium web';
+    src: url('../fonts/titilliumweb-light.woff2') format('woff2'),
+         url('../fonts/titilliumweb-light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}

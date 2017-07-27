@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 Mar, 2017, 8:52:23 PM
+    Author     : Asheesh Sharma 
+*/
+
+/*  
+================================================================================
+***************     Main Contents Wrapper Styles For The Site      *************
+================================================================================
+*/
+a{
+    text-decoration: none;
+}
+.common-btn-list {
+    padding        : 0 10px 0 0;
+    background     : transparent none repeat scroll 0 0;
+    justify-content: start;
+    .promotion__link{
+        @include margin(0);
+        @include padding(14px 12px);
+        @include border-radius(0);
+        width         : 100%;
+        color         : $color_black;  
+        height        : auto;
+        cursor        : pointer; 
+        display       : block;
+        font-size     : 18px;
+        text-align    : center;
+        min-height    : auto;
+        background    : $color_light_grey1;
+        line-height   : 20px;
+        font-family   : $titillium_web_regular_font_family;
+        text-transform: uppercase;
+        &:before {
+            min-height: auto;
+        }
+        &:hover,&:focus{ 
+            background: $color_light_grey1;
+        }
+        &.active{
+            @include margin(15px 0 0);
+            color           : $color_white; 
+            background-color: $color_dark_grey;
+            &:hover,&:focus{
+                background-color: $color_dark_grey;
+            }
+            a {
+                color: $color_white;
+                &:hover,&:focus{
+                    color: $color_white; 
+                }
+            }
+        }  
+        a{
+            color: $color_black; 
+            &:hover,&:focus{
+                color: $color_black; 
+            }
+        }
+        span {
+            display: inline-flex;
+        }
+    }
+}
+
+.promotion__counter_start{
+    width          : 25%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+.promotion__variant_clear{
+    @include border-radius(0);
+    color       : $color_white !important;
+    margin      : 0;
+    height      : 28px;
+    padding     : 0;
+    min-width   : auto;
+    min-height  : 28px;
+    background  : $color_light_red none repeat scroll 0 0 !important;
+    border-color: $color_light_red;
+    &:hover,&:focus{
+        color       : $color_white !important;
+        background  : $color_light_red none repeat scroll 0 0 !important;
+        border-color: $color_light_red;
+    }
+}

@@ -1,0 +1,36 @@
+.track-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  &__inner {
+    position: relative;
+    min-width: 790px;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: $color_white;
+    padding: 0 0 0 10px;
+    border-top: 1px solid #dfe0e2;
+  }
+  &__counter {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    &--moveup {
+      background: $color-dark;
+      color: $color_white;
+    }
+  }
+  &__track {
+    display: flex;
+    flex: 1;
+  }
+}

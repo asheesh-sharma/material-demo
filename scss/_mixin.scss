@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Apr, 2017, 10:29:33 AM
+    Author     : Asheesh Sharma
+*/
+
+/*
+================================================================================
+********************   Custom  Mixins For The Site      ************************
+================================================================================
+*/
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin box-shadow($box_shdow) {
+    -moz-box-shadow: $box_shdow;
+    -webkit-box-shadow: $box_shdow;
+    box-shadow: $box_shdow;
+}
+@mixin center-position() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+@mixin padding($padding) {
+    padding: $padding;
+}
+@mixin margin($margin) {
+    margin: $margin;
+}
+@mixin size($base_width,$base_height){
+    width: $width;
+    height: $base_height;
+}
+@mixin size($base_width){
+    width: $base_width;
+    height: $base_width;
+}
+
+// Mixins
+// -----------------
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
